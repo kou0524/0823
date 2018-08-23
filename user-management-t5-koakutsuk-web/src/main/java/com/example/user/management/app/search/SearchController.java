@@ -84,7 +84,7 @@ public class SearchController {
 		//ページ番号はデフォルトの1ページ目を指定している。
 		searchcriteria.setPage(0);
 		//1ページで取得する件数の指定　ここでは3件としている。
-		Pageable pageable = new PageRequest(searchcriteria.getPage(), 5);
+		Pageable pageable = new PageRequest(searchcriteria.getPage(), 3);
 
 		return searchList(account, pageable, model);
 	}

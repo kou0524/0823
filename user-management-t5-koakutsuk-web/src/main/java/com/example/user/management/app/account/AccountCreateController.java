@@ -22,7 +22,6 @@ import com.example.user.management.app.validation.PasswordEqualsValidator;
 import com.example.user.management.domain.model.Account;
 import com.example.user.management.domain.model.Role;
 import com.example.user.management.domain.service.account.AccountService;
-import com.example.user.management.domain.service.userrole.RoleService;
 
 @Controller
 @SessionAttributes(value = { "accountCreateForm" })
@@ -35,9 +34,6 @@ public class AccountCreateController {
 
 	@Inject
 	AccountService accountService;
-
-	@Inject
-	RoleService RoleService;
 
 	@Inject
 	Mapper beanMapper;
@@ -84,9 +80,9 @@ public class AccountCreateController {
 		}
 
 		Account account = beanMapper.map(form, Account.class);
-		Role Role = beanMapper.map(form, Role.class);
-		accountService.create(account, form.getPassword());
-		RoleService.createRole(Role);
+		Role role = beanMapper.map(form, Role.class);
+		//ここを、2つに分けて登録することを直す。
+		accountService.create(account, form.getPassword(),role);
 
 		return "user/registerFinish";
 	}

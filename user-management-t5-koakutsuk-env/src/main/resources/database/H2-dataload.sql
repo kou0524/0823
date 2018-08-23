@@ -8,7 +8,7 @@ INSERT into t_users values('0007','grape','1998-8-8','東京都江東区木場�
 INSERT into t_users values('0008','grape','1998-8-8','東京都江東区木場一丁目1-1','09061964567','$2a$10$oxSJl.keBwxmsMLkcT9lPeAIxfNTPNQxpeywMrF7A3kVszwUTqfTK','ACTV','2015/6/7 14:29');
 INSERT into t_users values('0009','banana','1993-3-3','東京都豊島区池袋一丁目1-1','09012345678','$2a$10$oxSJl.keBwxmsMLkcT9lPeAIxfNTPNQxpeywMrF7A3kVszwUTqfTK','ACTV','2015/6/4 14:29');
 INSERT into t_users values('0010','peach','1994-4-4','東京都渋谷区渋谷一丁目7-12','09087654321','$2a$10$oxSJl.keBwxmsMLkcT9lPeAIxfNTPNQxpeywMrF7A3kVszwUTqfTK','ACTV','2015/6/5 14:29');
-INSERT into t_users values('00011','grape','1998-8-8','東京都江東区木場一丁目1-1','09061964567','$2a$10$oxSJl.keBwxmsMLkcT9lPeAIxfNTPNQxpeywMrF7A3kVszwUTqfTK','ACTV','2015/6/7 14:29');
+INSERT into t_users values('0011','grape','1998-8-8','東京都江東区木場一丁目1-1','09061964567','$2a$10$oxSJl.keBwxmsMLkcT9lPeAIxfNTPNQxpeywMrF7A3kVszwUTqfTK','ACTV','2015/6/7 14:29');
 
 
 INSERT into t_role values('0001', 'ADMN');

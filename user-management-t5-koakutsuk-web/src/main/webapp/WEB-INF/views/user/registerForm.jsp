@@ -17,13 +17,13 @@
 				<tr>
 					<td><form:label path="userID" cssErrorClass="error-label">ユーザID</form:label></td>
 					<td><form:input path="userID" cssErrorClass="error-input"
-							value="0011" /></td>
+							value="0022" /></td>
 					<td><form:errors path="userID" cssClass="error-messages" /></td>
 				</tr>
 				<tr>
 					<td><form:label path="userName" cssErrorClass="error-label">名前</form:label></td>
 					<td><form:input path="userName" cssErrorClass="error-input"
-							value="orange" /></td>
+							value="koakutsu" /></td>
 					<td><form:errors path="userName" cssClass="error-messages" /></td>
 				</tr>
 				<tr>
@@ -46,7 +46,7 @@
 					<td><fmt:formatDate value="${accountCreateForm.birthday}"
 							pattern="yyyy/MM/dd" var="formattedBirthday" /><input
 						type="date" id="birthday" name="birthday"
-						value="${formattedBirthday}" /> (yyyy/MM/dd 形式)</td>
+						value="${formattedBirthday}" value="1991/1/1"/> (yyyy/MM/dd 形式)</td>
 					<td><form:errors path="birthday" cssClass="error-messages" /></td>
 				</tr>
 
