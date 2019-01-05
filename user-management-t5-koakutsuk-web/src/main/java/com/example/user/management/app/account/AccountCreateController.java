@@ -30,7 +30,7 @@ public class AccountCreateController {
 	
 	//相関チェックを行う Validator を Inject する。
 	@Inject
-	PasswordEqualsValidator passwordEqualsValidator; 
+	PasswordEqualsValidator aaa; 
 
 	@Inject
 	AccountService accountService;
